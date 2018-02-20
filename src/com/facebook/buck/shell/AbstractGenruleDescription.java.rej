@@ -1,0 +1,9 @@
+diff a/src/com/facebook/buck/shell/AbstractGenruleDescription.java b/src/com/facebook/buck/shell/AbstractGenruleDescription.java	(rejected hunks)
+@@ -37,6 +37,7 @@ import com.facebook.buck.rules.macros.LocationMacroExpander;
+ import com.facebook.buck.rules.macros.MacroExpander;
+ import com.facebook.buck.rules.macros.MacroHandler;
+ import com.facebook.buck.rules.macros.MavenCoordinatesMacroExpander;
++import com.facebook.buck.rules.macros.ProcessorpathMacroExpander;
+ import com.facebook.buck.rules.macros.QueryOutputsMacroExpander;
+ import com.facebook.buck.rules.macros.QueryPathsMacroExpander;
+ import com.facebook.buck.rules.macros.QueryTargetsMacroExpander;

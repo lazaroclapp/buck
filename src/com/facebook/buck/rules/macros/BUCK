@@ -3,6 +3,7 @@ TYPES_SRCS = [
     "AbstractExecutableMacro.java",
     "AbstractLocationMacro.java",
     "AbstractMavenCoordinatesMacro.java",
+    "AbstractProcessorpathMacro.java",
     "AbstractQueryOutputsMacro.java",
     "AbstractQueryTargetsMacro.java",
     "AbstractStringWithMacros.java",

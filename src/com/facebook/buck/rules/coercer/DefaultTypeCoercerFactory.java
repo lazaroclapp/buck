@@ -28,6 +28,7 @@ import com.facebook.buck.rules.CellPathResolver;
 import com.facebook.buck.rules.SourcePath;
 import com.facebook.buck.rules.SourceWithFlags;
 import com.facebook.buck.rules.macros.ClasspathMacro;
+import com.facebook.buck.rules.macros.ProcessorpathMacro;
 import com.facebook.buck.rules.macros.ExecutableMacro;
 import com.facebook.buck.rules.macros.LocationMacro;
 import com.facebook.buck.rules.macros.MavenCoordinatesMacro;
@@ -142,12 +143,14 @@ public class DefaultTypeCoercerFactory implements TypeCoercerFactory {
                   "classpath", ClasspathMacro.class,
                   "exe", ExecutableMacro.class,
                   "location", LocationMacro.class,
-                  "maven_coords", MavenCoordinatesMacro.class),
+                  "maven_coords", MavenCoordinatesMacro.class,
+                  "processorpath", ProcessorpathMacro.class),
               ImmutableList.of(
                   new ClasspathMacroTypeCoercer(buildTargetTypeCoercer),
                   new ExecutableMacroTypeCoercer(buildTargetTypeCoercer),
                   new LocationMacroTypeCoercer(buildTargetTypeCoercer),
-                  new MavenCoordinatesMacroTypeCoercer(buildTargetTypeCoercer))),
+                  new MavenCoordinatesMacroTypeCoercer(buildTargetTypeCoercer),
+                  new ProcessorpathMacroTypeCoercer(buildTargetTypeCoercer))),
         };
   }
 
